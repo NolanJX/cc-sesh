@@ -1,0 +1,23 @@
+{
+  "env": {
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1,
+
+    "ANTHROPIC_BASE_URL": "",
+    "ANTHROPIC_AUTH_TOKEN": "",
+
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "",
+
+    "ANTHROPIC_MODEL": "",
+    "CLAUDE_CODE_SUBAGENT_MODEL": ""
+  },
+  "permissions": {
+    "deny": [
+      "Read(/claude-code-config/.claude/settings.json)",
+      "Read(/claude-code-config/.claude.json)",
+      "Read(~/.claude/settings.json)",
+      "Read(~/.claude.json)"
+    ]
+  }
+}
