@@ -9,7 +9,8 @@ RUN install -d -m 0755 /etc/apt/keyrings \
     && apt-get install -y claude-code \
     && rm -rf /var/lib/apt/lists/*
 
-RUN mkdir -p /home/vscode/.claude
+RUN mkdir -p /home/vscode/.claude \
+    && chown vscode:vscode /home/vscode/.claude
 
 COPY --chown=vscode:vscode claude-code-config/.claude/settings.json /home/vscode/.claude/settings.json
 COPY --chown=vscode:vscode claude-code-config/.claude.json /home/vscode/.claude.json
