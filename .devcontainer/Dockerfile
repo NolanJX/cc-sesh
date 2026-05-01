@@ -18,5 +18,6 @@ RUN CLAUDE_CODE_PLUGIN_CACHE_DIR=/opt/claude-seed \
 RUN mkdir -p /home/vscode/.claude \
     && chown vscode:vscode /home/vscode/.claude
 
+COPY --chown=vscode:vscode claude-code-config/.claude/CLAUDE.md /home/vscode/.claude/CLAUDE.md
 COPY --chown=vscode:vscode claude-code-config/.claude/settings.json /home/vscode/.claude/settings.json
 COPY --chown=vscode:vscode claude-code-config/.claude.json /home/vscode/.claude.json
