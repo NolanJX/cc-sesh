@@ -209,3 +209,6 @@ __marimo__/
 # Claude Code user config files
 claude-code-config/.claude/settings.json
 claude-code-config/.claude.json
+
+# Dev Container
+.devcontainer/postcreate.local.sh

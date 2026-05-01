@@ -7,7 +7,8 @@
 		"dockerfile": "Dockerfile",
 		"context": ".."
 	},
-	"remoteEnv": {
+	"postCreateCommand": "[ -f .devcontainer/postcreate.local.sh ] && bash .devcontainer/postcreate.local.sh || true",
+		"remoteEnv": {
 		"CLAUDE_CODE_PLUGIN_SEED_DIR": "/opt/claude-seed"
 	},
 
