@@ -6,6 +6,9 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 		"context": ".."
+	},
+	"remoteEnv": {
+		"CLAUDE_CODE_PLUGIN_SEED_DIR": "/opt/claude-seed"
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
