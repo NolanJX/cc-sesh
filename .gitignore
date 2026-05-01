@@ -206,7 +206,7 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# Claude Code user config files
+# Claude Code
 claude-code-config/.claude/settings.json
 claude-code-config/.claude.json
 
