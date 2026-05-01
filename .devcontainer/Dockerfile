@@ -9,6 +9,12 @@ RUN install -d -m 0755 /etc/apt/keyrings \
     && apt-get install -y claude-code \
     && rm -rf /var/lib/apt/lists/*
 
+# Pre-seed Superpowers plugin at build time
+RUN CLAUDE_CODE_PLUGIN_CACHE_DIR=/opt/claude-seed \
+    claude plugin marketplace add obra/superpowers-marketplace \
+    && CLAUDE_CODE_PLUGIN_CACHE_DIR=/opt/claude-seed \
+    claude plugin install superpowers@superpowers-marketplace
+
 RUN mkdir -p /home/vscode/.claude \
     && chown vscode:vscode /home/vscode/.claude
 
