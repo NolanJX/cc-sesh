@@ -14,8 +14,8 @@
   },
   "permissions": {
     "deny": [
-      "Read(/claude-code-config/.claude/settings.json)",
-      "Read(/claude-code-config/.claude.json)",
+      "Read(/.devcontainer/claude-code-config/.claude/settings.json)",
+      "Read(/.devcontainer/claude-code-config/.claude.json)",
       "Read(~/.claude/settings.json)",
       "Read(~/.claude.json)"
     ]
