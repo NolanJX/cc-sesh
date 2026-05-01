@@ -7,6 +7,9 @@
 		"dockerfile": "Dockerfile",
 		"context": ".."
 	},
+	"containerEnv": {
+		"TZ": "${localEnv:TZ}"
+	},
 	"remoteEnv": {
 		"CLAUDE_CODE_PLUGIN_SEED_DIR": "/opt/claude-seed"
 	},
