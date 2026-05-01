@@ -7,10 +7,10 @@
 		"dockerfile": "Dockerfile",
 		"context": ".."
 	},
-	"postCreateCommand": "[ -f .devcontainer/postcreate.local.sh ] && bash .devcontainer/postcreate.local.sh || true",
-		"remoteEnv": {
+	"remoteEnv": {
 		"CLAUDE_CODE_PLUGIN_SEED_DIR": "/opt/claude-seed"
 	},
+	"postCreateCommand": "[ -f .devcontainer/postcreate.local.sh ] && bash .devcontainer/postcreate.local.sh || true",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
