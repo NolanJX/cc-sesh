@@ -8,7 +8,7 @@
 		"context": ".."
 	},
 	"containerEnv": {
-		"TZ": "${localEnv:TZ}"
+		"TZ": "${localEnv:TZ:UTC}"
 	},
 	"remoteEnv": {
 		"CLAUDE_CODE_PLUGIN_SEED_DIR": "/opt/claude-seed"
